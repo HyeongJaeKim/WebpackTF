@@ -1,0 +1,7 @@
+@import './import/sprite_png_maps';
+@import './import/sprite_mixin';
+
+.all {
+	@include get-sprite('icon_all_64x64', $sp_test1);
+	color: red;
+}

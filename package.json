@@ -1,0 +1,35 @@
+{
+  "name": "webpacktf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build:pc": "cross-env DEVICE_ENV=pc webpack",
+    "build:mobile": "cross-env DEVICE_ENV=mobile webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HyeongJaeKim/webpackTF.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HyeongJaeKim/webpackTF/issues"
+  },
+  "homepage": "https://github.com/HyeongJaeKim/webpackTF#readme",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "handlebars": "^4.1.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-spritesmith": "^1.0.1"
+  }
+}
