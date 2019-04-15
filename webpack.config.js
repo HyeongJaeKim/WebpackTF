@@ -1,5 +1,5 @@
 const path = require('path');
-const spritePng = require('./config/sprites/spritePng');
+const runPngSprite = require('./config/sprites/spritePng');
 
 module.exports = {
 	entry: {
@@ -36,5 +36,5 @@ module.exports = {
 			// }
 		]
 	},
-	plugins: [...spritePng]
+	plugins: [...runPngSprite('pc', 'src/assets/img/sprites', 'src/img', 'src/assets/scss/sprites')]
 }

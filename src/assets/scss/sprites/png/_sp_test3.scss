@@ -1,0 +1,52 @@
+// Sprites Map
+$sp_test3: (
+	name: 'sp_test3',
+	ratio: 1,
+	width: 196px,
+	height: 196px,
+	image: 'http:/localhost/RND/webpackTF/src/img/png/sp_test3.png',
+	sprites: (
+	icon_leports_64x64: (
+			offset-x: 0px,
+			offset-y: 0px,
+			width: 64px,
+			height: 64px,
+		),
+		icon_living_64x64: (
+			offset-x: -66px,
+			offset-y: 0px,
+			width: 64px,
+			height: 64px,
+		),
+		icon_luxury_64x64: (
+			offset-x: 0px,
+			offset-y: -66px,
+			width: 64px,
+			height: 64px,
+		),
+		icon_men_64x64: (
+			offset-x: -66px,
+			offset-y: -66px,
+			width: 64px,
+			height: 64px,
+		),
+		icon_shoes_64x64: (
+			offset-x: -132px,
+			offset-y: 0px,
+			width: 64px,
+			height: 64px,
+		),
+		icon_underwear_64x64: (
+			offset-x: -132px,
+			offset-y: -66px,
+			width: 64px,
+			height: 64px,
+		),
+		icon_women_64x64: (
+			offset-x: 0px,
+			offset-y: -132px,
+			width: 64px,
+			height: 64px,
+		),
+	)
+);

@@ -1,0 +1,7 @@
+// Sprites Map import
+@import "png/sp_test1";
+@import "png/sp_test2";
+@import "png/sp_test3";
+
+// Sprites Map List
+$map_list: $sp_test1, $sp_test2, $sp_test3, ;
