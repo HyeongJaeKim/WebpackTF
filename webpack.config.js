@@ -1,40 +1,46 @@
 const path = require('path');
-const runPngSprite = require('./config/sprites/spritePng');
+const pngSprite = require('./config/sprites/spritePng');
 
 module.exports = {
-	entry: {
-		test: path.resolve(__dirname, './src/js/index'),
-	},
+	mode: 'development',
+	entry: [
+		path.resolve(path.join(__dirname, './src/'), 'index.js')
+	],
 	output: {
-		path: path.resolve(__dirname, './src/dist'),
-		filename: '[name].js'
+		filename: 'bundle.js',
+		path: path.resolve(__dirname, './public'),
+		publicPath: '/public/',
+	},
+	devServer: {
+		port: 3000,
+		hot: true
 	},
 	module: {
 		rules: [
 			{
-				test: /\.scss$/,
-				exclude: /node_modules/,
+				test: /\.css$/,
 				use: [
-					{
-						loader: "style-loader"
-					},
-					{
-						loader: "css-loader"
-					},
-					{
-						loader: "sass-loader"
-					}
+					'style-loader',
+					'css-loader'
 				]
 			},
-			// {
-			// 	test: /\.(png|jp(e*)g)$/,
-			// 	loader: 'url-loader',
-			// 	options: {
-			// 		limit: 8000,
-			// 		name: 'img/png/[name].[ext]'
-			// 	}
-			// }
+			{
+				test: /\.scss$/,
+				use: [
+					'style-loader',
+					'css-loader',
+					'sass-loader'
+				]
+			},
+			{
+				test: /\.png$/,
+				use: [
+					'file-loader?name=img/[name].[ext]'
+				]
+			}
 		]
 	},
-	plugins: [...runPngSprite('pc', 'src/assets/img/sprites', 'src/img', 'src/assets/scss/sprites')]
+	plugins: [
+		...pngSprite('pc', 'src/assets/img/sprites', 'public/img/sprites', 'src/assets/scss/sprites')
+	]
 }

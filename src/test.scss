@@ -1,0 +1,10 @@
+@import 'assets/scss/sprites/sprite_png_maps';
+@import 'assets/scss/import/sprite_mixin';
+
+.title {
+  color: red;
+}
+
+.hello {
+  //@include get-sprite('icon_all_64x64', $sp_test1);
+}
