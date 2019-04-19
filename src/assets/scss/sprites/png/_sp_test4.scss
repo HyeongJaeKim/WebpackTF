@@ -1,55 +1,49 @@
 // Sprites Map
-$sp_test1: (
-	name: 'sp_test1',
+$sp_test4: (
+	name: 'sp_test4',
 	ratio: 1,
 	width: 196px,
 	height: 196px,
-	image: 'src/public/img/sprites/png/sp_test1.png',
+	image: 'src/public/img/sprites/png/sp_test4.png',
 	sprites: (
-	icon_accessories_64x64: (
+	icon_leports_64x64: (
 			offset-x: 0px,
 			offset-y: 0px,
 			width: 64px,
 			height: 64px,
 		),
-		icon_accessories_64x642: (
+		icon_living_64x64: (
 			offset-x: -66px,
 			offset-y: 0px,
 			width: 64px,
 			height: 64px,
 		),
-		icon_all_64x64: (
+		icon_luxury_64x64: (
 			offset-x: 0px,
 			offset-y: -66px,
 			width: 64px,
 			height: 64px,
 		),
-		icon_cosmetics_64x64: (
+		icon_men_64x64: (
 			offset-x: -66px,
 			offset-y: -66px,
 			width: 64px,
 			height: 64px,
 		),
-		icon_furniture_64x64: (
+		icon_shoes_64x64: (
 			offset-x: -132px,
 			offset-y: 0px,
 			width: 64px,
 			height: 64px,
 		),
-		icon_goods_64x64: (
+		icon_underwear_64x64: (
 			offset-x: -132px,
 			offset-y: -66px,
 			width: 64px,
 			height: 64px,
 		),
-		icon_kids_64x64: (
+		icon_women_64x64: (
 			offset-x: 0px,
-			offset-y: -132px,
-			width: 64px,
-			height: 64px,
-		),
-		icon_kitchen_64x64: (
-			offset-x: -66px,
 			offset-y: -132px,
 			width: 64px,
 			height: 64px,
